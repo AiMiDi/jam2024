@@ -4,7 +4,7 @@ namespace Assets.Script
 {
     public class Buff : ScriptableObject
     {
-        private float duration ;
+        protected float duration ;
 
         protected Buff(float duration= 0.0f)
         {

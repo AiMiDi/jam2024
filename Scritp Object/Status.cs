@@ -26,6 +26,8 @@ namespace Assets.Script
         public float attack_speed = 2f;
         // 移动速度
         public float move_speed = 10f;
+        // 暂停动作
+        public bool is_stop = true;
         // 拥有的buff
         public List<Buff> hasBuffs = new();
         // 添加给别人的buff
@@ -48,6 +50,10 @@ namespace Assets.Script
             defense = status.defense;
             attack_speed = status.attack_speed;
             mark = status.mark;
+            coin = status.coin;
+            is_stop = status.is_stop;
+            hasBuffs = new List<Buff>(status.hasBuffs);
+            addBuffs = new List<addableBuff>(status.addBuffs);
         }
 
         void SetFromLevel()

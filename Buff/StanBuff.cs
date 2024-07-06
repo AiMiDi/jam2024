@@ -9,6 +9,6 @@ public class StanBuff : Buff
     public override void BuffUpdate(Entity entity)
     {
         base.BuffUpdate(entity);
-        entity.status.attack_speed = 0;
+        entity.status.is_stop = duration >= 0;
     }
 }
