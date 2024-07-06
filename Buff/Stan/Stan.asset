@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9aa348980d41e44449c2ed3c21343199, type: 3}
-  m_Name: StanBuff
+  m_Name: Stan
   m_EditorClassIdentifier: 

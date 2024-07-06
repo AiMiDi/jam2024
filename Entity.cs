@@ -18,6 +18,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected float attackCheckRadius = 1.0f;
     private float attackTimer = 0.0f;
     public Entity attackedEntity;
+
     public Animator anim { get; private set; }
     public Slider healthBar;
 
@@ -41,7 +42,6 @@ public class Entity : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
-        UpdateBuff();
         Attack(attackedEntity);
         UpdateHealthBar();
     }
@@ -78,6 +78,7 @@ public class Entity : MonoBehaviour
         attackTimer = status.attack_speed;
         var damage = status.GetDamage();
         attackedEntity.status.health -= damage;
+        Action();
         Debug.Log(name + " attack " + attackedEntity.name + " damage " + damage);
     }
 
@@ -99,5 +100,10 @@ public class Entity : MonoBehaviour
     protected virtual void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, attackCheckRadius);
+    }
+
+    public void Action()
+    {
+        UpdateBuff();
     }
 }
