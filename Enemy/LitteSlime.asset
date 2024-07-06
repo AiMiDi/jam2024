@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fc9531eb5898e04ab4351132f306e1a, type: 3}
-  m_Name: "\u70B8\u5F39\u732B"
+  m_Name: LitteSlime
   m_EditorClassIdentifier: 
-  level: 0
-  max_health: 0
+  level: 1
+  max_health: 15
   health: 0
-  max_damage: 0
-  min_damage: 0
+  max_damage: 10
+  min_damage: 6
   defense: 0
   mark: 0
-  coin: 0
-  attack_speed: 0
+  coin: 48
+  attack_speed: 2
   move_speed: 0
+  is_stop: 0
   hasBuffs: []
   addBuffs: []

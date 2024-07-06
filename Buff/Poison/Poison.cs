@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ÖÐ¶¾")]
+[CreateAssetMenu(menuName = "Poison")]
 public class Poison : Buff
 {
     public int poisonLayer;

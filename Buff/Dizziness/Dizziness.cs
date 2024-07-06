@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "яётн")]
+[CreateAssetMenu(menuName = "Dizziness")]
 public class Dizziness : Buff
 {
     public float DizzinessTime;
