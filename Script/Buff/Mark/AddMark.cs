@@ -11,6 +11,7 @@ public class AddMark : Buff
     public override void BuffUpdate(Entity entity)
     {
         entity.status.mark += addMarkLayer;
+        isInvalid = true;
     }
 }
 

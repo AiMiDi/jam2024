@@ -16,6 +16,7 @@ public class Dizziness : Buff
             {
                 stopTimeCount = dizzinessTime;
                 entity.status.is_stop = true;
+                isInvalid = true;
             }
             
         }

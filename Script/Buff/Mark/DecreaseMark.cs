@@ -13,6 +13,7 @@ public class DecreaseMark : Buff
         if(entity.status.mark>0)
         {
             entity.status.mark -= decreaseMarkLayer;
+            isInvalid = true;
         }
     }
 }

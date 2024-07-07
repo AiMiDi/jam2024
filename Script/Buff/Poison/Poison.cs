@@ -10,12 +10,14 @@ public class Poison : Buff
 
     public override void BuffUpdate(Entity entity)
     {
-        if(poisonLayer >0)
+        if(poisonLayer > 0)
         {
             //中毒减少10%血量
             entity.status.health -= entity.status.health/10;
             //中毒层数减少1层
             poisonLayer--;
+            return;
         }
+        isInvalid = true;
     }
 }

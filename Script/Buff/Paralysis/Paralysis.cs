@@ -20,6 +20,7 @@ public class Paralysis : Buff
         if (paralysisLayer == 0 )
         {
             entity.status.attack_speed = oldAttack_speed;
+            isInvalid = true;
         }
     }
 }

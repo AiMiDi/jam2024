@@ -14,6 +14,8 @@ public class Lanceration : Buff
         {
             entity.status.defense -= 10;
             lancerationLayer--;
+            return;
         }
+        isInvalid = true;
     }
 }

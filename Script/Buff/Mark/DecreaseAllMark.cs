@@ -11,5 +11,6 @@ public class DecreaseAllMark : Buff
     public override void BuffUpdate(Entity entity)
     {
         entity.status.mark = 0;
+        isInvalid = true;
     }
 }
