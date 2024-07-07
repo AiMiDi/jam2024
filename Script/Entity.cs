@@ -8,25 +8,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using static UnityEngine.EventSystems.EventTrigger;
+using Object = System.Object;
 using Random = UnityEngine.Random;
 using Slider = UnityEngine.UI.Slider;
 
 public class Entity : MonoBehaviour
 {
     public Status status;
+    public Battle battle;
 
     [SerializeField] protected float attackCheckRadius = 1.0f;
     private float attackTimer = 0.0f;
     public Entity attackedEntity;
 
     public Animator anim { get; private set; }
+    public Rigidbody2D rb { get; private set; }
     public Slider healthBar;
 
     // Start is called before the first frame update
     protected void Start()
     {
         status = status == null ? new Status(1) : new Status(status);
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         InitHealthBar();
     }
 
@@ -50,6 +54,10 @@ public class Entity : MonoBehaviour
     {
         if(healthBar != null)
             healthBar.value = (float)status.health / status.max_health;
+        if (status.health <= 0)
+        {
+            EndBattle();
+        }
     }
 
     private void UpdateBuff()
@@ -59,12 +67,15 @@ public class Entity : MonoBehaviour
             if(Random.Range(0, 100) < addBuff.probability)
             {
                 attackedEntity.status.hasBuffs.Add(addBuff.buff);
+                Destroy(addBuff);
             }
         }
 
         foreach (var buff in status.hasBuffs)
         {
             buff.BuffUpdate(this);
+            if(buff.isInvalid)
+                Destroy(buff);
         }
     }
 
@@ -78,6 +89,7 @@ public class Entity : MonoBehaviour
         attackTimer = status.attack_speed;
         var damage = status.GetDamage();
         attackedEntity.status.health -= damage;
+        anim.SetBool("IsAttack", true);
         Action();
         Debug.Log(name + " attack " + attackedEntity.name + " damage " + damage);
     }

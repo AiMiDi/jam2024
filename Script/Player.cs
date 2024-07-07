@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class Player : Entity
 {
-    bool isMoved = false;
+    bool isMove = false;
+
+    bool isMoveToAttacked = false;
+    bool isMoveToAttack = false;
 
     // Start is called before the first frame update
     private new void Start()
@@ -17,23 +20,50 @@ public class Player : Entity
     private new void Update()
     {
         base.Update();
-        MoveToAttackedEntity();
+
+        if (isMoveToAttack)
+        {
+            MoveToAttackedEntity();
+            return;
+        }
+
+        if (isMove)
+        {
+            Move(true);
+        }
+
+        Move(false);
+
     }
 
     public override void BeginBattle()
     {
         base.BeginBattle();
+        isMoveToAttack = true;
+    }
+
+    public override void EndBattle()
+    {
+        isMoveToAttack = false;
+        battle.EndBattle(true);
+        Destroy(this);
     }
 
     private void MoveToAttackedEntity()
     {
-        if (!CanAttack() && !isMoved)
+        if (!CanAttack() && !isMoveToAttacked)
         {
-            transform.position = Vector3.MoveTowards(transform.position, attackedEntity.transform.position, status.move_speed * Time.deltaTime);
+            Move(true);
         }
         else
         {
-            isMoved = true;
+            Move(false);
         }
+    }
+
+    private void Move(bool isMove)
+    {
+        anim.SetBool("IsRun", isMove);
+        battle.endlessParallaxBackground.isBackgroundMove = isMove;
     }
 }
