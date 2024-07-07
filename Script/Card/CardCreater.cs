@@ -10,13 +10,10 @@ public class CardCreater : MonoBehaviour
     public CardSciptObject cardMessage;
     public Image cardArt;
     public Image cardType;
-    public TMP_Text cardName;
-
 
     public void Start()
     {
         cardArt.sprite = cardMessage.cardArt;
         cardType.sprite = cardMessage.cardType; 
-        cardName.text = cardMessage.cardName;
     }
 }

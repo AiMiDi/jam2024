@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardArt: {fileID: 21300000, guid: 3c8df57acadeb864ab2380e250f570a2, type: 3}
   cardName: "\u722A\u4E4B\u653B\u51FB"
-  cardType: {fileID: 0}
-  ATK: 1
-  armor: 0
+  cardType: {fileID: 21300000, guid: 056d1541f9643e14bb848857557e429d, type: 3}
   cardTypeDescription: attack
+  cardEffect: {fileID: 11400000, guid: bdef43380a55fcb4ead67e0f423b2e42, type: 2}

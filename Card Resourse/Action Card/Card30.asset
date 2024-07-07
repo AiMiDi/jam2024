@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d231072405daa4bbfd67885544327d, type: 3}
+  m_Name: Card30
+  m_EditorClassIdentifier: 
+  cardArt: {fileID: 21300000, guid: 4721b4935a4235e46a272c38d28121b2, type: 3}
+  cardName: "\u55B5\u6BD2\u7A7A\u6D41\u8F6C"
+  cardType: {fileID: 21300000, guid: 056d1541f9643e14bb848857557e429d, type: 3}
+  cardTypeDescription: attack
+  cardEffect: {fileID: 11400000, guid: 7b88e9deffa29724db8ab20b88494e70, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d231072405daa4bbfd67885544327d, type: 3}
+  m_Name: Card38
+  m_EditorClassIdentifier: 
+  cardArt: {fileID: 21300000, guid: cbe39f9bdee744c48bb5ee4f6e9edd00, type: 3}
+  cardName: "\u516B\u5366\u77F3\u5175"
+  cardType: {fileID: 21300000, guid: d356ef5c9fe014f40b734504687d59cd, type: 3}
+  cardTypeDescription: attack defensive
+  cardEffect: {fileID: 11400000, guid: 25cd255dc9b678e4cbec607f64d286fb, type: 2}

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d231072405daa4bbfd67885544327d, type: 3}
   m_Name: Card08
   m_EditorClassIdentifier: 
-  cardArt: {fileID: 0}
-  cardName: 
-  cardType: {fileID: 0}
-  ATK: 0
-  armor: 0
-  cardTypeDescription: 
+  cardArt: {fileID: 21300000, guid: 6ece9c04d98ff6a459db16335668ab6f, type: 3}
+  cardName: "\u71C3\u706B"
+  cardType: {fileID: 21300000, guid: 056d1541f9643e14bb848857557e429d, type: 3}
+  cardTypeDescription: attack
+  cardEffect: {fileID: 11400000, guid: fa36e149a4bb4a346a1d64e24438a541, type: 2}

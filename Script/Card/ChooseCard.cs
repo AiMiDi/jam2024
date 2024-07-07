@@ -10,18 +10,30 @@ public class ChooseCard : MonoBehaviour
     public GameObject CardBox;
     public GameObject Card;
     public GameObject select;
+    private int chooseCardCount;
     public bool flag = false;
     
     public void AddCardBox()
     {
         CardBox = GameObject.Find("CardBox");
+        chooseCardCount = CardBox.GetComponent<MyCards>().chooseCardCount;
         if (!flag)
         {
-            CardBox.GetComponent<MyCards>().CardBox.Add(Card);
+            if(chooseCardCount < 4)
+            {
+                CardBox.GetComponent<MyCards>().CardBox.Add(Card);
+                CardBox.GetComponent<MyCards>().chooseCardCount++;
+            }
+            else
+            {
+                flag = !flag;
+            }
+
         }
         else
         {
             CardBox.GetComponent<MyCards>().CardBox.Remove(Card);
+            CardBox.GetComponent<MyCards>().chooseCardCount--;
         }
     }
     public void isChoose()

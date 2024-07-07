@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d231072405daa4bbfd67885544327d, type: 3}
+  m_Name: Card15
+  m_EditorClassIdentifier: 
+  cardArt: {fileID: 21300000, guid: 471d4cc91b504804eba2365b44eb0382, type: 3}
+  cardName: "\u7977\u98CE"
+  cardType: {fileID: 21300000, guid: 294659ce6a1b99d4ab659b75192f6edb, type: 3}
+  cardTypeDescription: dodge
+  cardEffect: {fileID: 11400000, guid: bef2bf3121632834fb4b7b140fd2a081, type: 2}

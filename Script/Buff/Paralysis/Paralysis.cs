@@ -14,8 +14,9 @@ public class Paralysis : Buff
         if (oldAttack_speed < 0f)
         {
             oldAttack_speed = entity.status.attack_speed;
+            entity.status.attack_speed += 0.2f * paralysisLayer;
         }
-        entity.status.attack_speed += 0.2f * paralysisLayer;
+        
         paralysisLayer --;
         if (paralysisLayer == 0 )
         {

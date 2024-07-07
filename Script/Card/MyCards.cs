@@ -11,6 +11,7 @@ public class MyCards : MonoBehaviour
     public GameObject newCard;
     public GameObject CardManager;
     public Transform cardCanves;
+    public int chooseCardCount = 0;
     public bool flag;
 
     public void showCardBox()

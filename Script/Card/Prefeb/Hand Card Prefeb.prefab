@@ -25,16 +25,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765585694245354189}
-  m_LocalRotation: {x: 0, y: 0, z: 0.3834089, w: 0.9235787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.68, y: 0.67, z: 0.67}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.67, y: 1.6454412, z: 1.6454412}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5422283320195490990}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45.09}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.815, y: -220.186}
+  m_AnchoredPosition: {x: -0.085996, y: -228}
   m_SizeDelta: {x: 94.466, y: 112.049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8177252154239202418
@@ -58,14 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.91360855, b: 1, a: 1}
+  m_Color: {r: 0.9924528, g: 0.9924528, b: 0.9924528, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 056d1541f9643e14bb848857557e429d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -102,7 +102,7 @@ RectTransform:
   m_GameObject: {fileID: 2618402963523613477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5422283320195490990}
@@ -110,7 +110,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3979457874721864835
 CanvasRenderer:
@@ -133,14 +133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.61698115, b: 0.61698115, a: 1}
+  m_Color: {r: 0, g: 0.9843137, b: 0.13333334, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9d0aab49a7a5c2d4ca943c5c108f903b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -208,8 +208,6 @@ MonoBehaviour:
   cardArt: {fileID: 2786418317950464092}
   cardType: {fileID: 8972475707291042279}
   cardName: {fileID: 0}
-  ATK: {fileID: 0}
-  armor: {fileID: 0}
 --- !u!114 &6128095686451536915
 MonoBehaviour:
   m_ObjectHideFlags: 0

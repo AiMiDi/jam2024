@@ -23,13 +23,7 @@ public class CreatCardManage: MonoBehaviour
         {
 
             Vector3 vector3 = new Vector3(550 , 1500, 0);
-            int cardNum = Random.Range(0, 10);
-            if (cardNum >= 0 && cardNum <= 3)
-                cardNum = 0;
-            else if(cardNum >= 4 && cardNum <= 5)
-                cardNum = 1;
-            else if(cardNum >= 6 && cardNum <= 10)
-                cardNum = 2;
+            int cardNum = Random.Range(0, cardMessageList.Count-1);
             newCard.GetComponent<CardCreater>().cardMessage = cardMessageList[cardNum];
             GameObject A = Instantiate(newCard,vector3,Quaternion.identity,cardCanves);
             cards.Add(A);
