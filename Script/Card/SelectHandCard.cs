@@ -80,8 +80,8 @@ public class SelectHandCard : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         {
             cardBox.GetComponent<MyCards>().CardList.Remove(gameObject);
             ReSetPosition();
-            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
-            Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½");
+            //·¢¶¯¿¨ÅÆÐ§¹û
+            Debug.Log("·¢¶¯¿¨ÅÆÐ§¹û");
             Destroy(gameObject);
         }
     }

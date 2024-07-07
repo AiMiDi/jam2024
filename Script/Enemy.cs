@@ -20,10 +20,4 @@ public class Enemy : Entity
     {
         base.BeginBattle();
     }
-
-    public override void EndBattle()
-    {
-        battle.EndBattle(false);
-        Destroy(this);
-    }
 }

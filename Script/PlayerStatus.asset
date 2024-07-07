@@ -18,10 +18,8 @@ MonoBehaviour:
   max_damage: 5
   min_damage: 3
   defense: 0
-  mark: 0
-  coin: 0
   attack_speed: 1.5
-  move_speed: 0
-  is_stop: 0
+  move_speed: 0.05
+  mark: 0
   hasBuffs: []
   addBuffs: []
