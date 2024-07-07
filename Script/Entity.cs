@@ -54,6 +54,10 @@ public class Entity : MonoBehaviour
     {
         if(healthBar != null)
             healthBar.value = (float)status.health / status.max_health;
+        if (status.health <= 0)
+        {
+            EndBattle();
+        }
     }
 
     private void UpdateBuff()
@@ -85,6 +89,7 @@ public class Entity : MonoBehaviour
         attackTimer = status.attack_speed;
         var damage = status.GetDamage();
         attackedEntity.status.health -= damage;
+        anim.SetBool("IsAttack", true);
         Action();
         Debug.Log(name + " attack " + attackedEntity.name + " damage " + damage);
     }
