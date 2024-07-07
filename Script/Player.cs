@@ -27,6 +27,9 @@ public class Player : Entity
 
     private void MoveToAttackedEntity()
     {
+        anim.SetBool("IsRun", true);
+        battle.endlessParallaxBackground.isBackgroundMove = true;
+        return;
         if (!CanAttack() && !isMoved)
         {
             transform.position = Vector3.MoveTowards(transform.position, attackedEntity.transform.position, status.move_speed * Time.deltaTime);

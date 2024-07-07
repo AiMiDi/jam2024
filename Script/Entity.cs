@@ -8,25 +8,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using static UnityEngine.EventSystems.EventTrigger;
+using Object = System.Object;
 using Random = UnityEngine.Random;
 using Slider = UnityEngine.UI.Slider;
 
 public class Entity : MonoBehaviour
 {
     public Status status;
+    public Battle battle;
 
     [SerializeField] protected float attackCheckRadius = 1.0f;
     private float attackTimer = 0.0f;
     public Entity attackedEntity;
 
     public Animator anim { get; private set; }
+    public Rigidbody2D rb { get; private set; }
     public Slider healthBar;
 
     // Start is called before the first frame update
     protected void Start()
     {
         status = status == null ? new Status(1) : new Status(status);
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         InitHealthBar();
     }
 
@@ -59,12 +63,15 @@ public class Entity : MonoBehaviour
             if(Random.Range(0, 100) < addBuff.probability)
             {
                 attackedEntity.status.hasBuffs.Add(addBuff.buff);
+                Destroy(addBuff);
             }
         }
 
         foreach (var buff in status.hasBuffs)
         {
             buff.BuffUpdate(this);
+            if(buff.isInvalid)
+                Destroy(buff);
         }
     }
 
