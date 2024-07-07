@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Battle : MonoBehaviour
 {
-    [SerializeField] private Entity player;
-    [SerializeField] private Entity enemy;
+    [SerializeField] public Entity player;
+    [SerializeField] public Entity enemy;
 
     // Start is called before the first frame update
     void Start()
