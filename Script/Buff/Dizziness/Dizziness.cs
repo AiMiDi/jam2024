@@ -7,15 +7,23 @@ using UnityEngine;
 public class Dizziness : Buff
 {
     public float dizzinessTime;
-    private float stopTimeCount;
+    private float stopTimeCount = -1f;
     public override void BuffUpdate(Entity entity)
     {
         if (!entity.status.is_stop)
         {
-            stopTimeCount = dizzinessTime;
-            if (stopTimeCount > 0)
-                return;
-            entity.status.is_stop = true;
+            if (stopTimeCount < 0f)
+            {
+                stopTimeCount = dizzinessTime;
+                entity.status.is_stop = true;
+            }
+            
         }
+        if (stopTimeCount > 0 || entity.status.is_stop)
+        {
+            stopTimeCount -= Time.deltaTime;
+            return;
+        }
+        entity.status.is_stop = false;
     }
 }
