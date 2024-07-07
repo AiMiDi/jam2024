@@ -6,11 +6,16 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Dizziness")]
 public class Dizziness : Buff
 {
-    public float DizzinessTime;
-    
+    public float dizzinessTime;
+    private float stopTimeCount;
     public override void BuffUpdate(Entity entity)
     {
-        base.BuffUpdate(entity);
-        
+        if (!entity.status.is_stop)
+        {
+            stopTimeCount = dizzinessTime;
+            if (stopTimeCount > 0)
+                return;
+            entity.status.is_stop = true;
+        }
     }
 }

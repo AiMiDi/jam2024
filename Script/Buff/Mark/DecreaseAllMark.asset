@@ -9,19 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fc9531eb5898e04ab4351132f306e1a, type: 3}
-  m_Name: BigFatCat
+  m_Script: {fileID: 11500000, guid: 56fa4439b0b9324409e6da6a94ab7261, type: 3}
+  m_Name: DecreaseAllMark
   m_EditorClassIdentifier: 
-  level: 1
-  max_health: 50
-  health: 0
-  max_damage: 40
-  min_damage: 35
-  defense: 30
-  mark: 0
-  coin: 365
-  attack_speed: 5.5
-  move_speed: 0
-  is_stop: 0
-  hasBuffs: []
-  addBuffs: []
