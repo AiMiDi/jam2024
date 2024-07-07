@@ -331,7 +331,7 @@ Animator:
   m_GameObject: {fileID: 4296058198102876928}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3d7f135ddd6c23e41806d9d4300e3234, type: 2}
+  m_Controller: {fileID: 9100000, guid: 43024c996dc037646abd3bf4f1bab9f8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -383,7 +383,7 @@ SpriteRenderer:
   m_SortingLayerID: 941966733
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1024057322, guid: 52f86a4867636ee449d519d7868fe017, type: 3}
+  m_Sprite: {fileID: 1215676601, guid: a67df8e4e54c6d149824d05cdd021e9e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 6529139487176963296}
   - component: {fileID: 1681429196900911910}
   m_Layer: 0
-  m_Name: BigFatCat
+  m_Name: Big Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f961bf0c7e7e4749adbb7371245975a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  status: {fileID: 11400000, guid: e85b56e32a88b854eaf7bd07e84abe1d, type: 2}
+  status: {fileID: 11400000, guid: f51bd3a108238de4a83234820819ae26, type: 2}
   battle: {fileID: 0}
   attackCheckRadius: 2
   attackedEntity: {fileID: 0}

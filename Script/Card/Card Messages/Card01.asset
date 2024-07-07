@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d231072405daa4bbfd67885544327d, type: 3}
   m_Name: Card01
   m_EditorClassIdentifier: 
-  cardArt: {fileID: 21300000, guid: a97b1dc3f5776b84c9b2e4adcc311174, type: 3}
+  cardArt: {fileID: 21300000, guid: 817c26859c793ef4095dd441c7ab13b0, type: 3}
   cardName: 01
-  cardType: {fileID: 21300000, guid: ef778634ac1dd5f4a8037ad2bf5584db, type: 3}
+  cardType: {fileID: 21300000, guid: 056d1541f9643e14bb848857557e429d, type: 3}
   ATK: 10
   armor: 0
   cardTypeDescription: Attack
